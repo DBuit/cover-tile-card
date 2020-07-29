@@ -88,6 +88,8 @@ class CoverTileCard extends LitElement {
         word-wrap:break-word;
         overflow: hidden;
         white-space: normal;
+        margin-bottom: -5px;
+        padding-bottom: 5px;
       }
       
       .name.on {
@@ -144,6 +146,12 @@ class CoverTileCard extends LitElement {
                 
       .icon.on {
         color: #f7d959;
+      }
+      @media only screen and (max-width: 768px) {
+        .name {
+            font-size: 13px;
+            line-height: 13px;
+        }
       }
     `;
   }
